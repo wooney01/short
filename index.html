@@ -203,7 +203,7 @@
     </style>
   </head>
   <body>
-    <header><h1>short</h1></header>
+    <header><h1>URL缩短器|Free</h1></header>
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input placeholder="输入要缩短的网址..." x-model="url" x-ref="url" />
@@ -217,7 +217,7 @@
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">生成</button>
     </main>
     <footer>
-     service
+     By：尔思short-links服务
     </footer>
     <script src="asset/js/alpine.js"></script>
     <script>
